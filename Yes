@@ -1,0 +1,167 @@
+ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Up = Instance.new("ImageLabel")
+local Down = Instance.new("ImageLabel")
+local Whiteup = Instance.new("Frame")
+local Internal = Instance.new("TextLabel")
+local Whiteunder = Instance.new("Frame")
+local Aimbot = Instance.new("TextButton")
+local Visuals = Instance.new("TextButton")
+local Movement = Instance.new("TextButton")
+local Other = Instance.new("TextButton")
+local Lua = Instance.new("TextButton")
+local Config = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Test = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0766194016, 0, 0.22147277, 0)
+Main.Size = UDim2.new(0, 310, 0, 301)
+Main.Active = true
+
+Up.Name = "Up"
+Up.Parent = Main
+Up.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Up.BackgroundTransparency = 1.000
+Up.Position = UDim2.new(-0.00101703405, 0, -0.108447596, 0)
+Up.Size = UDim2.new(0, 310, 0, 84)
+Up.Image = "rbxassetid://3570695787"
+Up.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Up.ScaleType = Enum.ScaleType.Slice
+Up.SliceCenter = Rect.new(100, 100, 100, 100)
+Up.SliceScale = 0.120
+
+Down.Name = "Down"
+Down.Parent = Main
+Down.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Down.BackgroundTransparency = 1.000
+Down.Position = UDim2.new(-0.00101703405, 0, 0.818297505, 0)
+Down.Size = UDim2.new(0, 310, 0, 84)
+Down.Image = "rbxassetid://3570695787"
+Down.ImageColor3 = Color3.fromRGB(33, 33, 33)
+Down.ScaleType = Enum.ScaleType.Slice
+Down.SliceCenter = Rect.new(100, 100, 100, 100)
+Down.SliceScale = 0.120
+
+Whiteup.Name = "Whiteup"
+Whiteup.Parent = Main
+Whiteup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Whiteup.BorderSizePixel = 0
+Whiteup.Position = UDim2.new(0.00348786381, 0, -0.00275327358, 0)
+Whiteup.Size = UDim2.new(0, 308, 0, 7)
+
+Internal.Name = "Internal"
+Internal.Parent = Main
+Internal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Internal.BackgroundTransparency = 1.000
+Internal.Position = UDim2.new(0.00565165281, 0, -0.112204239, 0)
+Internal.Size = UDim2.new(0, 308, 0, 33)
+Internal.Font = Enum.Font.SourceSans
+Internal.Text = "Internal.move"
+Internal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Internal.TextSize = 14.000
+
+Whiteunder.Name = "Whiteunder"
+Whiteunder.Parent = Main
+Whiteunder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Whiteunder.BorderSizePixel = 0
+Whiteunder.Position = UDim2.new(-0.00296374899, 0, 0.944090605, 0)
+Whiteunder.Size = UDim2.new(0, 308, 0, 7)
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Main
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.BackgroundTransparency = 1.000
+Aimbot.Position = UDim2.new(0.00317589194, 0, 0.966208398, 0)
+Aimbot.Size = UDim2.new(0, 45, 0, 39)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 14.000
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Main
+Visuals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.BackgroundTransparency = 1.000
+Visuals.Position = UDim2.new(0.146696195, 0, 0.966208398, 0)
+Visuals.Size = UDim2.new(0, 45, 0, 39)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.TextSize = 14.000
+
+Movement.Name = "Movement"
+Movement.Parent = Main
+Movement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Movement.BackgroundTransparency = 1.000
+Movement.Position = UDim2.new(0.312853307, 0, 0.966208398, 0)
+Movement.Size = UDim2.new(0, 45, 0, 39)
+Movement.Font = Enum.Font.SourceSans
+Movement.Text = "Movement"
+Movement.TextColor3 = Color3.fromRGB(255, 255, 255)
+Movement.TextSize = 14.000
+
+Other.Name = "Other"
+Other.Parent = Main
+Other.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Other.BackgroundTransparency = 1.000
+Other.Position = UDim2.new(0.458014578, 0, 0.966208398, 0)
+Other.Size = UDim2.new(0, 45, 0, 39)
+Other.Font = Enum.Font.SourceSans
+Other.Text = "Other"
+Other.TextColor3 = Color3.fromRGB(255, 255, 255)
+Other.TextSize = 14.000
+
+Lua.Name = "Lua"
+Lua.Parent = Main
+Lua.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lua.BackgroundTransparency = 1.000
+Lua.Position = UDim2.new(0.583821058, 0, 0.966208398, 0)
+Lua.Size = UDim2.new(0, 27, 0, 39)
+Lua.Font = Enum.Font.SourceSans
+Lua.Text = "Lua"
+Lua.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lua.TextSize = 14.000
+
+Config.Name = "Config"
+Config.Parent = Main
+Config.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Config.BackgroundTransparency = 1.000
+Config.Position = UDim2.new(0.651563048, 0, 0.966208398, 0)
+Config.Size = UDim2.new(0, 52, 0, 39)
+Config.Font = Enum.Font.SourceSans
+Config.Text = "Config"
+Config.TextColor3 = Color3.fromRGB(255, 255, 255)
+Config.TextSize = 14.000
+
+Settings.Name = "Settings"
+Settings.Parent = Main
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0.819304943, 0, 0.966208398, 0)
+Settings.Size = UDim2.new(0, 44, 0, 39)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 14.000
+
+Test.Name = "Test"
+Test.Parent = ScreenGui
+Test.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Test.Position = UDim2.new(0.954545438, 0, 0, 0)
+Test.Size = UDim2.new(0, 47, 0, 20)
+Test.Font = Enum.Font.SourceSans
+Test.Text = "Test (f9)"
+Test.TextColor3 = Color3.fromRGB(255, 255, 255)
+Test.TextSize = 14.000
+Test.Draggable = true
+Test.MouseButton1Down:connect(function()
+	print('If this is printed, the script should be able to work.')
+end)
