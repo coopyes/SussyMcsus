@@ -1,0 +1,70 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Loader = Instance.new("Frame")
+local Up = Instance.new("ImageLabel")
+local Down = Instance.new("ImageLabel")
+local Execute = Instance.new("TextButton")
+local Label = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Loader.Name = "Loader"
+Loader.Parent = ScreenGui
+Loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loader.BorderSizePixel = 0
+Loader.Position = UDim2.new(0.356866539, 0, 0.359116018, 0)
+Loader.Size = UDim2.new(0, 296, 0, 150)
+Loader.Active = true
+Loader.Draggable = true
+
+Up.Name = "Up"
+Up.Parent = Loader
+Up.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Up.BackgroundTransparency = 1.000
+Up.Position = UDim2.new(0, 0, 0.913333356, 0)
+Up.Size = UDim2.new(0, 296, 0, 70)
+Up.Image = "rbxassetid://3570695787"
+Up.ScaleType = Enum.ScaleType.Slice
+Up.SliceCenter = Rect.new(100, 100, 100, 100)
+Up.SliceScale = 0.120
+
+Down.Name = "Down"
+Down.Parent = Loader
+Down.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Down.BackgroundTransparency = 1.000
+Down.Position = UDim2.new(0, 0, -0.444581717, 0)
+Down.Size = UDim2.new(0, 296, 0, 86)
+Down.Image = "rbxassetid://3570695787"
+Down.ScaleType = Enum.ScaleType.Slice
+Down.SliceCenter = Rect.new(100, 100, 100, 100)
+Down.SliceScale = 0.120
+
+Execute.Name = "Execute"
+Execute.Parent = Loader
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 1.000
+Execute.Position = UDim2.new(0.283136725, 0, 0.648751616, 0)
+Execute.Size = UDim2.new(0, 127, 0, 39)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+Execute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/coopyes/SussyMcsus/main/Yes"))()
+end)
+
+Label.Name = "Label"
+Label.Parent = Loader
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.Position = UDim2.new(0, 0, -0.446666658, 0)
+Label.Size = UDim2.new(0, 296, 0, 50)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "Internal.move"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextSize = 14.000
+Label.TextWrapped = true
